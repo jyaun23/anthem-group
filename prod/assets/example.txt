@@ -62,6 +62,11 @@
             margin: 0;
         }
 
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
         .section {
             padding: 60px 20px;
             max-width: 1200px;
@@ -181,6 +186,7 @@
 </head>
 <body>
     <header>
+        <img src="/mnt/data/image_fx_.jpg" alt="The Anthem Group Logo" class="logo">
         <nav>
             <a href="#">Home</a>
             <a href="#about">About Us</a>
@@ -213,6 +219,10 @@
             <img src="https://theanchorboston.com/wp-content/uploads/2020/06/anchor2.jpg" alt="Gallery Image 2">
             <img src="https://theanchorboston.com/wp-content/uploads/2020/06/anchor3.jpg" alt="Gallery Image 3">
             <img src="https://theanchorboston.com/wp-content/uploads/2020/06/anchor4.jpg" alt="Gallery Image 4">
+            <img src="https://theanchorboston.com/wp-content/uploads/2020/06/anchor5.jpg" alt="Gallery Image 5">
+            <img src="https://theanchorboston.com/wp-content/uploads/2020/06/anchor6.jpg" alt="Gallery Image 6">
+            <img src="https://theanchorboston.com/wp-content/uploads/2020/06/anchor7.jpg" alt="Gallery Image 7">
+            <img src="https://theanchorboston.com/wp-content/uploads/2020/06/anchor8.jpg" alt="Gallery Image 8">
         </div>
     </section>
 
