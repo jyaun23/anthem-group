@@ -156,11 +156,25 @@
     <footer>
         <p>&copy; 2024 The Anthem Group. All rights reserved.</p>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook" aria-label="Facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin" aria-label="LinkedIn"></i></a>
+            <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
         </div>
     </footer>
+
+    <script>
+        // Fallback for older browsers that do not support 'scrollIntoView' smoothly
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
